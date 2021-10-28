@@ -36,7 +36,7 @@ const Post = ({ post, setCurrentId }) => {
                     color='primary' 
                     onClick={() => dispatch(likePost(post._id))}>
                     <ThumbUpAltIcon fontSize='small'/>
-                    Like
+                    &nbsp; Like &nbsp;
                     {post.likeCount}
                 </Button>
                 <DeleteIcon size='small' color='primary' onClick={() => dispatch(deletePost(post._id))} >
